@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tutor-contrib-myfirstplugin"
+version = "0.1.0"
+description = "My first custom Tutor plugin"
+requires-python = ">=3.9"
+dependencies = ["tutor>=19,<20"]
+
+[project.entry-points."tutor.plugin.v1"]
+myfirstplugin = "myfirstplugin.plugin"
+
+[tool.setuptools.packages.find]
+include = ["myfirstplugin*"]
