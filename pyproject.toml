@@ -5,9 +5,25 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "tutor-contrib-myfirstplugin"
 version = "0.1.0"
-description = "My first custom Tutor plugin"
+description = "A custom Tutor plugin for Open edX theme management"
+readme = "README.md"
 requires-python = ">=3.9"
-dependencies = ["tutor>=19,<20"]
+dependencies = [
+    "tutor>=19,<20"
+]
+keywords = [
+    "tutor",
+    "openedx",
+    "theme-management",
+    "indigo",
+    "pink"
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Framework :: Django",
+    "Operating System :: OS Independent"
+]
 
 [project.entry-points."tutor.plugin.v1"]
 myfirstplugin = "myfirstplugin.plugin"
